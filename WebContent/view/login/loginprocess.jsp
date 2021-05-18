@@ -5,7 +5,7 @@
 
 	if (email.equals("hanguk@naver.com") && password.equals("1234")) {
 	request.getSession().setAttribute("email", email);
-	response.sendRedirect("../../index.jsp?email="+email);
+	response.sendRedirect("../main/index.jsp?email="+email);
 	} else {
 %>
 <script>

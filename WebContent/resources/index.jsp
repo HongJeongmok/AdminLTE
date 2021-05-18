@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<% String email = (String) request.getSession().getAttribute("email"); %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,7 +61,8 @@
 		}, 'google_translate_element');
 	}
 </script>
-<script type="text/javascript"	src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+<script type="text/javascript"
+	src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
 	
 </script>
 
@@ -83,11 +84,12 @@
 				<a href="#" class="sidebar-toggle" data-toggle="push-menu"
 					role="button"> <span class="sr-only">Toggle navigation</span>
 				</a>
-				
+
 				<div class="navbar-custom-menu">
 					<ul class="nav navbar-nav">
 						<!-- Messages: style can be found in dropdown.less-->
-						<li><div style="margin-top: 11px;" id="google_translate_element"></div></li>
+						<li><div style="margin-top: 11px;"
+								id="google_translate_element"></div></li>
 						<li class="dropdown messages-menu"><a href="#"
 							class="dropdown-toggle" data-toggle="dropdown"> <i
 								class="fa fa-envelope-o"></i> <span class="label label-success">4</span>
@@ -267,7 +269,7 @@
 						<li class="dropdown user user-menu"><a href="#"
 							class="dropdown-toggle" data-toggle="dropdown"> <img
 								src="dist/img/user2-160x160.jpg" class="user-image"
-								alt="User Image"> <span class="hidden-xs"><%= email %></span>
+								alt="User Image"> <span class="hidden-xs"><%=request.getParameter("email")%></span>
 						</a>
 							<ul class="dropdown-menu">
 								<!-- User image -->
@@ -456,11 +458,9 @@
 						<ul class="treeview-menu">
 							<li><a href="pages/examples/gallery.html"><i
 									class="fa fa-circle-o"></i> Gallery</a></li>
-							<li><a href="pages/examples/조선닷컴.html"><i
-									class="fa fa-circle-o"></i> 조선닷컴</a></li>
-							<li><a href="pages/examples/일반게시판.html"><i
-									class="fa fa-circle-o"></i> 일반게시판</a></li>
-							<li><a href="pages/examples/동아일보.html"><i
+							<li><a href="pages/examples/Chosun.html"><i
+									class="fa fa-circle-o"></i> 조선일보</a></li>
+							<li><a href="pages/examples/DongA.html"><i
 									class="fa fa-circle-o"></i> 동아일보</a></li>
 							<li><a href="pages/examples/invoice.html"><i
 									class="fa fa-circle-o"></i> Invoice</a></li>
@@ -537,30 +537,32 @@
 			<div id="visual">
 				<div id="mySwipe" class='swipe'>
 					<ul class="touch_banner swipe-wrap" style="text-align: center;">
-						<!--Â ë°°ë ëª©ë¡Â -->
-						<li><a href="#"><img src="build/images/visual_img_1.jpg" height="250px"
-								alt="" /></a></li>
-						<li><a href="#"><img src="build/images/visual_img_2.jpg" height="250px"
-								alt="" /></a></li>
-						<li><a href="#"><img src="build/images/visual_img_3.jpg" height="250px"
-								alt="" /></a></li>
+						<!-- 배너 목록 -->
+						<li><a href="#"><img src="build/images/visual_img_1.jpg"
+								height="250px" alt="" /></a></li>
+						<li><a href="#"><img src="build/images/visual_img_2.jpg"
+								height="250px" alt="" /></a></li>
+						<li><a href="#"><img src="build/images/visual_img_3.jpg"
+								height="250px" alt="" /></a></li>
 					</ul>
 				</div>
 				<ul class="touch_bullet">
-					<!--Â ë°°ë ìì¹ íìÂ -->
-					<li><img src="build/images/visual_bullet_on.png" class="active"
-						class="active" alt="" /></li>
+					<!-- 배너 위치 표시 -->
+					<li><img src="build/images/visual_bullet_on.png"
+						class="active" class="active" alt="" /></li>
 					<li><img src="build/images/visual_bullet_off.png" alt="" /></li>
 					<li><img src="build/images/visual_bullet_off.png" alt="" /></li>
 				</ul>
 				<p class="touch_left_btn">
-					<!--Â ì´ì  ë²í¼Â -->
-					<a href="#"> <img src="build/images/visual_btn_left.png" alt="ì´ì  ë°°ë" />
+					<!-- 이전 버튼 -->
+					<a href="#"> <img src="build/images/visual_btn_left.png"
+						alt="이전 배너" />
 					</a>
 				</p>
 				<p class="touch_right_btn">
-					<!--Â ë¤ì ë²í¼Â -->
-					<a href="#"> <img src="build/images/visual_btn_right.png" alt="ë¤ì ë°°ë" />
+					<!-- 다음 버튼 -->
+					<a href="#"> <img src="build/images/visual_btn_right.png"
+						alt="다음 배너" />
 					</a>
 				</p>
 			</div>
@@ -1280,8 +1282,10 @@
 	</script>
 	<!-- Bootstrap 3.3.7 -->
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="build/css/base.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="build/css/main.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="build/css/base.css"
+		media="all" />
+	<link rel="stylesheet" type="text/css" href="build/css/main.css"
+		media="all" />
 	<script type="text/javascript" src="build/js/jquery-1.10.2.min.js"></script>
 	<!-- 제이쿼리 라이이브러리 연동 -->
 
@@ -1291,7 +1295,8 @@
 	<!-- 터치 슬라이드 플러그인 연동 -->
 	<script type="text/javascript" src="build/js/jquery.bxslider.min.js"></script>
 	<!-- bxSlider 플러그인 연동 -->
-	<script type="text/javascript" src="build/js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script type="text/javascript"
+		src="build/js/jquery-ui-1.10.4.custom.min.js"></script>
 	<!-- UI 플러그인 연동 -->
 	<script type="text/javascript" src="build/js/jquery.cookie.js"></script>
 	<!-- 쿠키 플러그인 연동 -->

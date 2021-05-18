@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
-<%@ include file="../include/header.jspf" %>
+<%@ include file="../include/header_blank.jspf" %>
 
 		<!-- Content Wrapper. Contains page content -->
 		<div class="content-wrapper">
@@ -48,4 +48,4 @@
 		</div>
 		<!-- /.content-wrapper -->
 		
-<%@ include file="../include/footer.jspf" %>
+<%@ include file="../include/footer_blank.jspf" %>
