@@ -10,6 +10,8 @@
 <meta name="google-translate-customization"
 	content="6f1073ba568f1202-9c8990a4b3025b3e-ga74e3ea243d3f01d-14"></meta>
 <title>AdminLTE 2 | Dashboard</title>
+<!-- favicon.ico error -->
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
 <!-- Tell the browser to be responsive to screen width -->
 <meta
 	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
@@ -41,7 +43,7 @@
 	href="<%= contextPath %>/resources/bower_components/bootstrap-daterangepicker/daterangepicker.css">
 <!-- bootstrap wysihtml5 - text editor -->
 <link rel="stylesheet"
-	href="../../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+	href="<%= contextPath %>/resources/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
