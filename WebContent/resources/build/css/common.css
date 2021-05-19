@@ -21,11 +21,11 @@
 
 /*기본 글꼴 및 링크 텍스트 꾸미기*/
 body{
-  font:12px gulim,"굴림",sans-serif;color:#333;
+  font:14px nanum Gothic,"나눔고딕", sans-serif;color:#333;
   background-color:#000;min-width:1003px;
 }
 select, input, textarea, button{
-  font:12px gulim,"굴림",sans-serif;
+  font:14px nanum Gothic, "나눔고딕", sans-serif;
   color:#333;
 }
 a{color:#333;text-decoration:none;}
