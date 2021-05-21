@@ -3,12 +3,14 @@
 
 <%@ include file="../include/header_main.jspf"%>
 
+<fmt:bundle basename="resource.message">
+
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
 	<!-- Content Header (Page header) -->
 	<section class="content-header">
 		<h1>
-			Dashboard <small>Control panel</small>
+			<fmt:message key="TITLE" /> <small>Control panel</small>
 		</h1>
 		<ol class="breadcrumb">
 			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -565,3 +567,5 @@
 <!-- /.content-wrapper -->
 
 <%@ include file="../include/footer_main.jspf" %>
+
+</fmt:bundle>
