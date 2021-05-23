@@ -4,7 +4,7 @@
 <%@ include file="../include/header_main.jspf"%>
 
 <fmt:bundle basename="resource.message">
-
+ 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
 	<!-- Content Header (Page header) -->
