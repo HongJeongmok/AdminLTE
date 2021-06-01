@@ -111,7 +111,7 @@
 			});
 		});
 	</script>
-	<!-- 	<script type="text/javascript">
+<!-- 	 	<script type="text/javascript">
 		//<![CDATA[
 		function login(id, pw) {
 			if (id == "hanguk@naver.com") {

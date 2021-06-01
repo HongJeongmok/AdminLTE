@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import guestbook.dao.MessageDao;
 import guestbook.model.Message;
 import jdbc.JdbcUtil;
-import jdbc.connection.ConnectionProvider;
+import jdbc.connection.ConnectionProvider1;
 
 public class DeleteMessageService {
 
@@ -22,7 +22,7 @@ public class DeleteMessageService {
 	public void deleteMessage(int messageId, String password) {
 		Connection conn = null;
 		try {
-			conn = ConnectionProvider.getConnection();
+			conn = ConnectionProvider1.getConnection();
 			conn.setAutoCommit(false);
 
 			MessageDao messageDao = MessageDao.getInstance();

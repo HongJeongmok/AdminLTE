@@ -8,7 +8,7 @@ import java.util.List;
 import guestbook.dao.MessageDao;
 import guestbook.model.Message;
 import jdbc.JdbcUtil;
-import jdbc.connection.ConnectionProvider;
+import jdbc.connection.ConnectionProvider1;
 
 public class GetMessageListService {
 	private static GetMessageListService instance = new GetMessageListService();
@@ -26,7 +26,7 @@ public class GetMessageListService {
 		Connection conn = null;
 		int currentPageNumber = pageNumber;
 		try {
-			conn = ConnectionProvider.getConnection();
+			conn = ConnectionProvider1.getConnection();
 			MessageDao messageDao = MessageDao.getInstance();
 
 			int messageTotalCount = messageDao.selectCount(conn);

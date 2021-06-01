@@ -1,6 +1,6 @@
 eclipse.preferences.version=1
 encoding//WebContent/view/examples/Chosun.jsp=UTF-8
 encoding//WebContent/view/examples/gallery.jsp=UTF-8
-encoding//WebContent/view/examples/guestbook.jsp=UTF-8
+encoding//WebContent/view/guestbook/guestbook.jsp=UTF-8
 encoding//WebContent/view/include/footer_main.jspf=UTF-8
 encoding/<project>=UTF-8

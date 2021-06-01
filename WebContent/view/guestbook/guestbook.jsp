@@ -53,7 +53,7 @@ MessageListView viewData = messageListService.getMessageList(pageNumber);
 			</div>
 			<div class="box-body1">
 
-				<form action="../guestbook/writeMessage.jsp" method="post">
+				<form action="writeMessage.jsp" method="post">
 					이름: <input type="text" name="guestName"> <br>
 					암호: <input type="password" name="password"> <br>
 					메시지:<textarea name="message" cols="30" rows="3"></textarea>
@@ -73,7 +73,7 @@ MessageListView viewData = messageListService.getMessageList(pageNumber);
 								메시지 번호: ${message.id} <br />
 								손님 이름: ${message.guestName} <br />
 								메시지: ${message.message} <br />
-								<a href="../guestbook/confirmDeletion.jsp?messageId=${message.id}">[삭제하기]</a>
+								<a href="confirmDeletion.jsp?messageId=${message.id}">[삭제하기]</a>
 								</td>
 							</tr>
 						</c:forEach>

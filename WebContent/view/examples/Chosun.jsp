@@ -316,7 +316,7 @@
 					class="fa fa-circle-o"></i> 조선일보</a></li>
 			<li><a href="../examples/DongA.jsp"><i
 					class="fa fa-circle-o"></i> 동아일보</a></li>
-			<li><a href="../examples/guestbook.jsp"><i
+			<li><a href="../guestbook/guestbook.jsp"><i
 					class="fa fa-circle-o"></i> 방명록</a></li>
 			<li><a href="../../resources/pages/examples/invoice.html"><i
 					class="fa fa-circle-o"></i> Invoice</a></li>
